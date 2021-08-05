@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>BIG BANG (RPSLS) GAME</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header>
+  <button class="btn--rules butt show-rules">📜 Rules</button>
+  <button class="btn--new butt">🔄 New game</button>
+ </header>
+ <main>
+  <section class="player player--active" id="player--0">
+   <h2 class="name" id="name--0">Me <span class="hidden me">👑</span></h2>
+   <img src="BBTGame/prachi.png" alt="" class=" hand hand--0 invisible">
+   <button class="btn--play--0 butt long">🤾‍♀ My Hand ?</button>
+   <br>
+   <button class="btn--hold--0 butt">🖐️ Hold</button>
+  </section>
+  <section class="player" id="player--1">
+   <h2 class="name" id="name--1">Sheldon<span class="hidden sheldon">👑</span></h2>
+   <img src="BBTGame/prachi.png" alt="" class=" hand hand--1 invisible">
+   <button class="btn--play--1 butt long">🤾‍♀ Show Sheldon'S Hand</button>
+  </section>
+  <p class="hidden lossMsg">BETTER LUCK NEXT TIME!🙁🤗</p>
+  <div class="score score-0">
+   <p class="score-label">⬅ <span class="current-score" id="score--0">0</span></p>
+  </div>
+  <div class="score score-1">
+   <p class="score-label"><span class="current-score" id="score--1">0</span> ➡</p>
+  </div>
+ </main>
+ <div class="rules hidden">
+  <button class="close-rules">&times;</button>
+  <h1>Rules of the game!😍</h1>
+  <div id="yupp">
+   <ul>
+    <li>Scissors ✂️ cuts Paper 📰</li>
+    <br>
+    <li>Paper 📰 covers Rock 🗿</li>
+    <br>
+    <li>Rock 🗿 crushes Lizard 🦎</li>
+    <br>
+    <li>Lizard 🦎 poisons Spock 🖖</li>
+    <br>
+    <li>Spock 🖖 smashes Scissors ✂️</li>
+    <br>
+    <li>Scissors ✂️ decapitates Lizard 🦎</li>
+    <br>
+    <li>Lizard 🦎 eats Paper 📰</li>
+    <br>
+    <li>Paper 📰 disproves Spock 🖖</li>
+    <br>
+    <li>Spock 🖖 vaporizes Rock 🗿</li>
+    <br>
+    <li>And as it always has, Rock 🗿 crushes Scissors ✂️.</li>
+    <br>
+   </ul>
+   <img src="BBTGame/rules.jpg" alt="">
+  </div>
+ </div>
+ <div class="overlay hidden"></div>
+ <script src="script.js"></script>
+</body>
+
+</html>
